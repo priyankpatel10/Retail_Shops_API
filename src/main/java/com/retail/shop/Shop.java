@@ -1,8 +1,17 @@
 package com.retail.shop;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Shop {
 	private String shopName;
 	private String shopAddress;
+	
+	public Shop() {
+	
+		// TODO Auto-generated constructor stub
+	}
+
 	private String shopPostCode;
 	private String latitude;
 	private String longitude;
