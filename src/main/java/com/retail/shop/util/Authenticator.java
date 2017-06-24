@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.net.Proxy;
 import java.lang.String;
 
-import org.springframework.stereotype.Component;
 
 import com.squareup.okhttp.Credentials;
 import com.squareup.okhttp.Request;
@@ -17,9 +16,6 @@ public class Authenticator implements com.squareup.okhttp.Authenticator {
 
 	private String proxyPassword;
 
-	private String hostUser;
-
-	private String hostPassword;
 
 	public Authenticator(String user, String password) {
 		this.proxyUser = user;

@@ -3,16 +3,16 @@ package com.retail.shop.controller;
 
 
 import java.util.HashMap;
-import java.util.List;
+
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.stereotype.Controller;
+
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,19 +21,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.google.maps.GeoApiContext;
-import com.google.maps.GeocodingApi;
-import com.google.maps.model.GeocodingResult;
-import com.google.maps.model.LatLng;
+
 import com.retail.shop.model.Shop;
 import com.retail.shop.service.ShopService;
-import com.retail.shop.util.LocationService;
 
-import net.minidev.json.writer.UpdaterMapper;
 
 @RestController
 @ComponentScan("com.retail.*")
-@PropertySource("constants.properties")
 public class ShopController {
 
 	@Autowired

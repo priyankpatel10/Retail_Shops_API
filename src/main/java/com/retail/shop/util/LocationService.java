@@ -2,7 +2,7 @@ package com.retail.shop.util;
 
 import java.net.InetSocketAddress;
 import java.net.Proxy;
-import java.util.Objects;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 

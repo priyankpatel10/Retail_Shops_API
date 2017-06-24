@@ -1,17 +1,16 @@
 package com.retail.shop.DAO;
 
-import java.util.ArrayList;
+
 import java.util.HashMap;
-import java.util.List;
+
 import java.util.Map;
 
-import org.assertj.core.error.ShouldContainPattern;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.PropertySource;
+
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
-import org.springframework.web.bind.annotation.PathVariable;
+
 
 import com.google.maps.model.LatLng;
 import com.retail.shop.data.ShopList;
@@ -20,7 +19,6 @@ import com.retail.shop.util.LocationService;
 
 
 @Component
-@PropertySource("constants.properties")
 public class ShopDAOImpl implements ShopDAO {
 	@Autowired
 	@Qualifier("locationService")
