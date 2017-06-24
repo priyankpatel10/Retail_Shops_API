@@ -1,8 +1,10 @@
-package com.retail.shop;
+package com.retail.shop.DAO;
 
 import java.util.Map;
 
 import org.springframework.stereotype.Repository;
+
+import com.retail.shop.model.Shop;
 
 @Repository
 public interface ShopDAO {

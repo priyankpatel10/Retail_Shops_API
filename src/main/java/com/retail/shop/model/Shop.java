@@ -1,4 +1,4 @@
-package com.retail.shop;
+package com.retail.shop.model;
 
 import org.springframework.stereotype.Component;
 

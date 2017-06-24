@@ -1,8 +1,10 @@
-package com.retail.shop;
+package com.retail.shop.service;
 
 import java.util.Map;
 
 import org.springframework.stereotype.Service;
+
+import com.retail.shop.model.Shop;
 
 @Service
 public interface ShopService {
