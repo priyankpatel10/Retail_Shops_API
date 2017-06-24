@@ -3,6 +3,7 @@ package com.retail.shop.DAO;
 import java.util.Map;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import com.retail.shop.model.Shop;
 
@@ -12,6 +13,7 @@ public interface ShopDAO {
 	public Map<String, Shop> addAllShops();
 	public Shop addShop(Shop shop);
 	public Shop updateShop(Shop shop);
+	public Shop getShop(  double latitude,  double longitude);
 	
 
 }

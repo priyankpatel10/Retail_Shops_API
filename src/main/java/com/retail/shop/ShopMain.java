@@ -10,7 +10,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Scope;
 
+import com.google.maps.model.LatLng;
+import com.retail.shop.data.DataStore;
+import com.retail.shop.data.ShopList;
+import com.retail.shop.model.Shop;
 import com.retail.shop.util.LocationService;
+
 
 
 @SpringBootApplication
@@ -26,6 +31,12 @@ public class ShopMain {
 	public LocationService getLocationService() {
     	LocationService service = new LocationService();
 		return service;
+	}
+    
+    @Bean(name = "dataStore")
+	@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
+	public ShopList<Shop, LatLng> getDataStore() {
+		return new DataStore();
 	}
 }
 

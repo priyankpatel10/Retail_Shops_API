@@ -6,15 +6,16 @@ import org.springframework.stereotype.Component;
 public class Shop {
 	private String shopName;
 	private String shopAddress;
+	private String shopPostCode;
+	private String latitude;
+	private String longitude;
 	
 	public Shop() {
 	
 		// TODO Auto-generated constructor stub
 	}
 
-	private String shopPostCode;
-	private String latitude;
-	private String longitude;
+	
 	
 	public Shop(String shopName, String shopAddress, String shopPostCode, String latitude, String longitude) {
 		super();

@@ -1,5 +1,7 @@
 package com.retail.shop.service;
 
+import static org.mockito.Matchers.shortThat;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -9,6 +11,7 @@ import java.util.logging.Level;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import com.google.maps.GeocodingApi;
 import com.google.maps.model.GeocodingResult;
@@ -44,6 +47,13 @@ public class ShopServiceImpl implements ShopService{
 		// TODO Auto-generated method stub
 		Shop updatedShop = shopDAO.updateShop(shop);
 		return updatedShop;
+	}
+
+	@Override
+	public Shop getShop( double latitude,  double longitude) {
+		// TODO Auto-generated method stub
+		Shop nearestShop = shopDAO.getShop(latitude,longitude);
+		return nearestShop;
 	}
 	
 
